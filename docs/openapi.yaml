@@ -1,0 +1,54 @@
+openapi: 3.1.0
+info:
+  title: MES Lite Demo API
+  version: 0.1.0
+servers:
+  - url: https://mes-demo.example.com
+paths:
+  /orders:
+    get:
+      operationId: listOrders
+      responses:
+        "200":
+          description: Synthetic order list
+    post:
+      operationId: createOrder
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateOrder"
+      responses:
+        "201":
+          description: Order created
+  /orders/{orderId}/transitions:
+    post:
+      operationId: transitionOrder
+      parameters:
+        - in: path
+          name: orderId
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Order transitioned
+components:
+  schemas:
+    CreateOrder:
+      type: object
+      required: [id, productId, plannedQuantity, dueAt]
+      properties:
+        id:
+          type: string
+          example: demo_order_001
+        productId:
+          type: string
+          example: demo_product_a
+        plannedQuantity:
+          type: number
+          exclusiveMinimum: 0
+        dueAt:
+          type: string
+          format: date-time

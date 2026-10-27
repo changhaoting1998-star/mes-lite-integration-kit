@@ -1,0 +1,17 @@
+{
+  "classification": "sanitized-counts-only",
+  "source_strategy": "clean-room-reimplementation",
+  "production_source_files_copied": 0,
+  "checks": {
+    "domain_and_adapter_tests": {
+      "status": "passed",
+      "passed": 8,
+      "failed": 0
+    },
+    "privacy_scan": {
+      "status": "passed",
+      "findings": 0
+    },
+    "external_runtime_dependencies": 0
+  }
+}

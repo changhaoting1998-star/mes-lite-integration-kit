@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demo_order_001",
+    "productId": "demo_product_a",
+    "plannedQuantity": 100,
+    "dueAt": "2099-12-31T00:00:00.000Z"
+  },
+  {
+    "id": "demo_order_002",
+    "productId": "demo_product_b",
+    "plannedQuantity": 240,
+    "dueAt": "2099-12-31T08:00:00.000Z"
+  }
+]

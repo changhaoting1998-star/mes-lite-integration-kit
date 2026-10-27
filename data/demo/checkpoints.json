@@ -1,0 +1,16 @@
+[
+  {
+    "id": "demo_checkpoint_weight",
+    "type": "RANGE",
+    "label": "演示重量检查",
+    "minimum": 9.5,
+    "maximum": 10.5,
+    "unit": "demo_unit"
+  },
+  {
+    "id": "demo_checkpoint_packaging",
+    "type": "BOOLEAN",
+    "label": "演示包装完整性",
+    "expected": true
+  }
+]

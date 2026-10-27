@@ -1,0 +1,17 @@
+node_modules/
+coverage/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+*.db
+*.sqlite*
+*.sql
+*.zip
+*.tar*
+*.gz
+uploads/
+attachments/
+data/private/
+reports/private/
